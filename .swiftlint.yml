@@ -1,0 +1,107 @@
+opt_in_rules:
+  - anyobject_protocol
+  - closure_spacing
+  - closure_end_indentation
+  - closure_body_length
+  - closure_parameter_position
+  - collection_alignment
+  - conditional_returns_on_newline
+  - contains_over_filter_is_empty
+  - contains_over_filter_count
+  - contains_over_first_not_nil
+  - contains_over_range_nil_comparison
+  - convenience_type
+  - cyclomatic_complexity
+  - discouraged_object_literal
+  - discouraged_optional_boolean
+  - discouraged_optional_collection
+  - discouraged_direct_init
+  - empty_collection_literal
+  - empty_count
+  - empty_string
+  - enum_case_associated_values_count
+  - expiring_todo
+  - explicit_init
+  - fallthrough
+  - file_name
+  - file_name_no_space
+  - file_types_order
+  - first_where
+  - flatmap_over_map_reduce
+  - force_cast
+  - force_try
+  - force_unwrapping
+  - function_default_parameter_at_end
+  - implicit_return
+  - implicitly_unwrapped_optional
+  - joined_default_parameter
+  - last_where
+  - literal_expression_end_indentation
+  - missing_docs
+  - modifier_order
+  - multiline_parameters
+  - no_extension_access_modifier
+  - nimble_operator
+  - nslocalizedstring_key
+  - number_separator
+  - optional_enum_case_matching
+  - operator_usage_whitespace
+  - overridden_super_call
+  - override_in_extension
+  - prefer_self_type_over_type_of_self
+  - prefer_zero_over_explicit_init
+  - prefixed_toplevel_constant
+  - private_action
+  - prohibited_super_call
+  - reduce_into
+  - return_arrow_whitespace
+  - redundant_type_annotation
+  - sorted_first_last
+  - static_operator
+  - switch_case_on_newline
+  - sorted_imports
+  - toggle_bool
+  - trailing_closure
+  - type_contents_order
+  - unowned_variable_capture
+  - unused_declaration
+  - unused_import
+  - vertical_parameter_alignment_on_call
+  - legacy_multiple
+  - legacy_random
+  - yoda_condition
+
+disabled_rules:
+  - trailing_whitespace
+  - nesting
+
+excluded:
+  - Carthage
+  - Pods
+  - bundler
+  - SnapshotUITests/SnapshotHelper.swift
+
+identifier_name:
+  min_length: 1
+  allowed_symbols: ["_"]
+
+type_body_length:
+  warning: 400
+  error: 800
+
+line_length:
+  ignores_urls: true
+  ignores_comments: true
+  ignores_function_declarations: true
+  ignores_interpolated_strings: true
+
+conditional_returns_on_newline:
+  if_only: true
+
+number_separator:
+  minimum_length: 5
+
+type_contents_order:
+  order: [[SwiftLintFramework.TypeContent.case], [SwiftLintFramework.TypeContent.typeAlias, SwiftLintFramework.TypeContent.associatedType], [SwiftLintFramework.TypeContent.subtype], [SwiftLintFramework.TypeContent.typeProperty], [SwiftLintFramework.TypeContent.instanceProperty], [SwiftLintFramework.TypeContent.ibInspectable], [SwiftLintFramework.TypeContent.ibOutlet], [SwiftLintFramework.TypeContent.initializer], [SwiftLintFramework.TypeContent.deinitializer], [SwiftLintFramework.TypeContent.typeMethod], [SwiftLintFramework.TypeContent.viewLifeCycleMethod], [SwiftLintFramework.TypeContent.ibAction], [SwiftLintFramework.TypeContent.otherMethod], [SwiftLintFramework.TypeContent.subscript]]
+
+reporter: "xcode"
